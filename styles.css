@@ -1,0 +1,221 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    overflow: hidden;
+    
+    /* منع تحديد النصوص */
+body {
+    user-select: none; /* لجميع المتصفحات الحديثة */
+}
+
+/* خاصية لتصحيح عرض النصوص في بعض المتصفحات */
+body {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* جميع المتصفحات الحديثة */
+}
+    
+    
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #360205 0%, #260305 50%, #140304 100%);
+    z-index: 0;
+}
+
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.glass-container {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 22px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    margin-bottom: 16px;
+    direction: rtl;
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    overflow: auto; /* أو scroll */
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+
+
+h2 {
+    color: #e34062; /* اللون الأصفر */
+    font-size: 14px; /* حجم الخط أصغر */
+    background: rgba(0, 0, 0, 0.1); /* خلفية خفيفة */
+    padding: 10px; /* إضافة حواف للعنوان */
+    border-radius: 5px; /* زوايا دائرية للخلفية */
+    margin-bottom: 15px; /* مسافة سفلية */
+      margin-top: 0px; /* مسافة سفلية */
+}
+
+
+label {
+    display: block;
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 7px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #6e1e2f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #75162a;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.notification {
+    position: fixed;
+    top: -100px; /* بدء من خارج الشاشة */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #444;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000; /* تأكد من أن الإشعار يظهر فوق العناصر الأخرى */
+    transition: top 0.5s ease; /* تأثير الانزلاق */
+}
+
+.notification.show {
+    top: 20px; /* موقع ظهور الإشعار */
+}
+
+.notification.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+
+
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+       
+
+}
+
+footer a:hover {
+   color: #1890db;
+}
+
+
+
+.menu-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    color: white;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 50px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.side-menu.open {
+    right: 0;
+}
+
+.side-menu button {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    text-align: right;
+    border: none;
+    border-bottom: 1px solid #555;
+    transition: background-color 0.3s ease;
+}
+
+.side-menu button:hover {
+    background-color: #ffc400;
+}
