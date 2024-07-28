@@ -39,12 +39,14 @@ body {
 }
 
 
+
+#city,
 #university,
-#college {
+#college,
+#department {
     color: black;
     -webkit-appearance: none;
 }
-
 
 /* شريط التمرير */
 ::-webkit-scrollbar {
