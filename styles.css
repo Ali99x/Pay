@@ -128,7 +128,7 @@ label {
 select, button {
     width: 100%;
     padding: 10px;
-    margin: 7px 0;
+    margin: 1px 0;
     border: none;
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.8);
@@ -141,7 +141,7 @@ button {
     background-color: #6e1e2f;
     color: white;
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 1px;
 }
 
 button:hover {
@@ -307,4 +307,3 @@ footer a:hover {
 .side-menu button:hover {
     background-color: #6e6e6e;
 }
-
