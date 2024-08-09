@@ -274,6 +274,7 @@ footer a:hover {
     transform: rotate(180deg) scale(1.1);
 }
        
+
 .side-menu {
     position: fixed;
     top: 0;
@@ -304,5 +305,6 @@ footer a:hover {
 }
 
 .side-menu button:hover {
-    background-color: #ffc400;
+    background-color: #6e6e6e;
 }
+
